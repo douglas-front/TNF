@@ -1,0 +1,51 @@
+.footer{
+    position: relative;
+    background-color: #fff;
+    height: 40vw;
+}
+.sitemap{
+    margin-top: 5vw;
+}
+.subTitle{
+    color: var(--color-red);
+}
+.list{
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vw;
+    list-style: none;
+}
+.list li{
+    cursor: pointer;
+    color: var(--color-red);
+    font-weight: 900;
+    font-size: 1.25vw;
+}
+
+.logo{
+    right: 3.90vw;
+    bottom: 5vw;
+    position: absolute;
+    object-fit: cover;
+
+    height: 10vw;
+    width: 33.85vw;
+}
+
+.paragraph{
+    position: absolute;
+    bottom: 2vw;
+}
+
+.toTop{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 7.90vw;
+    bottom: 12vw;
+}
+.toTop img{
+ transform: rotate(-50deg);
+}

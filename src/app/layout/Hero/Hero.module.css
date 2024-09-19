@@ -1,0 +1,92 @@
+.hero {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  height: 56.25vw;
+}
+.hero h1 {
+  color: var(--color-red);
+  position: absolute;
+  width: 90%;
+  text-align: center;
+}
+.hero h1:first-of-type {
+  top: 4.48vw;
+  opacity: 80%;
+}
+.hero h1:nth-child(2) {
+  top: 13.44vw;
+  z-index: 10;
+  color: var(--color-red-dark);
+}
+.hero h1:nth-child(3) {
+  top: 22.66vw;
+  opacity: 80%;
+}
+
+.ornamentation {
+  position: absolute;
+  top: 2.82vw;
+  left: 4.12vw;
+  width: 14.5vw;
+  object-fit: cover;
+}
+.ornamentation2 {
+  position: absolute;
+  bottom: 1.96vw;
+  right: 4.68vw;
+  width: 5.52vw;
+  object-fit: cover;
+}
+
+.welcome {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  gap: 3.22vw;
+  margin-bottom: 4.48vw;
+}
+
+.arrow {
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: -2vw;
+  left: 0vw;
+  cursor: pointer;
+  width: 4.8vw;
+}
+.bg {
+  background-color: var(--color-red);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 101%;
+  z-index: 1;
+}
+
+.info {
+  position: relative;
+  margin-bottom: 2.3vw;
+}
+.button {
+  overflow: hidden;
+  background-color: transparent;
+  height: 5.52vw;
+  cursor: pointer;
+  border: none;
+}
+.button img {
+  object-fit: cover;
+  width: 11.04vw;
+}
+
+.title {
+  overflow: hidden;
+}
+.title span {
+  display: block;
+  transform: translateY(100%);
+}

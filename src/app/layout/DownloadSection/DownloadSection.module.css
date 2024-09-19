@@ -1,0 +1,32 @@
+.downloadSection{
+    position: relative;
+    background-color: var(--color-red);
+    height: 30vw;
+}
+
+.title{
+    position: relative;
+    color: #fff;
+}
+.title img{
+    position: absolute;
+    top: -1vw;
+
+    width: 14.58vw;
+}
+
+.downloadButton{
+    position: absolute;
+    left: 3.90vw;
+    bottom: 1.5vw;
+}
+.downloadButton img{
+ width: 13.49vw;
+}
+
+.plusOrnamentation{
+    position: absolute;
+    right: 5.68vw;
+    bottom: 3.70vw;
+    width: 10.26vw;
+}

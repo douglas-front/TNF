@@ -1,0 +1,69 @@
+.creators{
+    padding-top: 5.5vw;
+    background-color: var(--color-red);
+    height: 58vw;
+}
+.container{
+    width: 92.8vw;
+    height: 41.8vw;
+    background-color: #fff;
+    padding-inline: 0.46vw;
+}
+
+.title{
+    color: var(--color-red-dark);
+    font-size: 14.42vw;
+}
+
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 13.28vw;
+    height: 23.41vw;
+}
+.iconCreator{
+    width: 5vw;
+    position: absolute;
+    top: 3.38vw;
+    right: 0;
+    mix-blend-mode: luminosity;
+}
+.card img:first-child{
+    width: 10.10vw;
+    object-fit: cover;
+}
+
+.nameCreator{
+    margin-top: 0.72vw;    
+}
+
+.areaCreator,
+.nameCreator{
+    font-weight: 900;
+    font-size: 1.25vw;
+    color: var(--color-red-dark);
+}
+
+.areaCreator{
+    color: var(--color-red);
+}
+
+.experienceCreator{
+    padding-top: 0.72vw;
+    font-size: 1.14vw;
+    font-weight: 900;
+}
+
+.line{
+    width: 0.2vw;
+    height: 1.15vw;
+    background-color: var(--color-red);
+}
+
+.containerCards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

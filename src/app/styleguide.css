@@ -1,0 +1,34 @@
+:root{
+    --color-red: #EE3535;
+    --color-red-dark: #590606;
+    --color-black: #000;
+    --section-padding:  4.12vw;
+}
+
+footer,
+section{
+    padding-inline: var(--section-padding);
+
+}
+h1{
+    font-size: 15.62vw;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+h1.small{
+    font-size: 10.42vw;
+}
+
+h3{
+    font-size: 5.43vw;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+p{
+    color: var(--color-red);
+    font-size: 1.25vw;
+    font-weight: 600;
+}
+p.bold{
+    font-weight: 900;
+}

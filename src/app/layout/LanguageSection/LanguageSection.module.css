@@ -1,0 +1,30 @@
+.languageSection{
+    overflow: hidden;
+    background-color: var(--color-red);
+}
+.title{
+    position: relative;
+    color: #fff;
+}
+.title img{
+    position: absolute;
+    top: -1vw;
+
+    width: 14.58vw;
+}
+
+.card{
+    cursor: pointer;
+    width: 20.83vw;
+    height: 10.42vw;
+}
+.card img{
+    width: 20.72vw;
+}
+
+.containerCards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

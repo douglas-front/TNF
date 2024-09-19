@@ -1,0 +1,79 @@
+.about {
+  position: relative;
+  height: 56.25vw;
+}
+
+.title {
+  width: 57.77vw;
+  position: relative;
+  padding-top: 8.75vw;
+  color: transparent;
+
+  -webkit-background-clip: text;
+  background: url("../../../../public/sobre.jpg") no-repeat center/contain;
+  background-clip: text;
+  background-position: 0% 80%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.41vw;
+}
+.paragraphs {
+  display: flex;
+  gap: 2.71vw;
+}
+
+.miniTitle {
+  position: absolute;
+  bottom: -1.5vw;
+  right: -2vw;
+}
+.miniTitle img{
+  object-fit: cover;
+  width: 14.37vw;
+  height: 4vw;
+}
+.ornamentationPlus {
+  position: absolute;
+  top: 12.32vw;
+  right: 18.96vw;
+  width: 4.74vw;
+  transform: rotate(-30deg);
+}
+
+.blocks {
+  position: absolute;
+  top: 6.25vw;
+  left: 61.36vw;
+  width: 11.40vw;
+}
+
+.ornamentation {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  top: 19.05vw;
+  right: 19.44vw;
+}
+.ornamentation img{
+  width: 5.04vw;
+}
+.ornamentation :nth-child(4),
+.ornamentation :nth-child(2) {
+  margin-left: 5.65vw;
+  transform: rotate(-30deg);
+}
+
+.button{
+    position: relative;
+    cursor: pointer;
+    position: absolute;
+    right: 3vw;
+    bottom: 0 ;
+}
+.button img{
+  width: 15.46vw;
+}
