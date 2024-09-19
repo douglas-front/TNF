@@ -5,6 +5,11 @@
     --section-padding:  4.12vw;
 }
 
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
 footer,
 section{
     padding-inline: var(--section-padding);

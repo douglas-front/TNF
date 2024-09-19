@@ -4,8 +4,8 @@ import styles from "./About.module.css";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useEffect } from "react";
-import { HoverButton, HoverButtonOut } from "./animations/HoverButton";
 import {ParagraphAnimation} from "@/app/animations/ParagraphAnimation";
+import { Bounce } from "@/app/animations/Bounce";
 
 export default function About() {
 
@@ -92,7 +92,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className={styles.button} onMouseEnter={HoverButton} onMouseLeave={HoverButtonOut}>
+      <div className={styles.button} onMouseEnter={()=> Bounce({className: `${styles.button}`})}>
         <img src="/button.png" alt="button" />
       </div>
 
