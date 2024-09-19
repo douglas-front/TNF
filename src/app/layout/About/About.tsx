@@ -1,7 +1,47 @@
+"use client"
+
 import styles from "./About.module.css";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { useEffect } from "react";
+import { HoverButton, HoverButtonOut } from "./animations/HoverButton";
+import {ParagraphAnimation} from "@/app/animations/ParagraphAnimation";
 
 export default function About() {
-  const arr = [1, 2, 3, 4, 5];
+
+  const arrForOrnamentation = [1, 2, 3, 4, 5];
+
+
+  useEffect(()=>{
+
+    ScrollTrigger.create({
+      trigger: `.${styles.about}`,
+      start: "40% 50%",
+      end: "100% 50%",
+      onEnter: () =>{
+        ParagraphAnimation({className: `${styles.bg}`})
+      },
+   
+    
+    })
+
+  },[])
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger)
+
+    gsap.to(`.${styles.ornamentation} img`,{
+      rotate: "400deg",
+      scrollTrigger:{
+        trigger: `.${styles.about}`,
+        start: "0% 60%",
+        end: "160% 100%",
+        scrub: true
+      }
+    })
+
+    return () => gsap.killTweensOf(`.${styles.ornamentation}`)
+  },[])
 
   return (
     <section className={styles.about}>
@@ -19,7 +59,7 @@ export default function About() {
             apaixonados por tecnologia, unidos <br />
             para apresentar um projeto que <br />
             ensina programação de forma <br />
-            acessível e inovadora.
+            acessível e inovadora. 
           </p>
           <p>
             Utilizando linguagens de programação, criamos uma <br />
@@ -28,6 +68,7 @@ export default function About() {
             apenas um clique, você pode obter um código pronto. Esse <br />
             código pode variar entre opções básicas e complexas.
           </p>
+          <div className={styles.bg}></div>
         </div>
         <div className={styles.paragraphs}>
           <p>
@@ -46,10 +87,12 @@ export default function About() {
             conceitos em tempo real, criando um ambiente perfeito <br />
             para o desenvolvimento dentro da área da programação.
           </p>
+          <div className={styles.bg}></div>
+
         </div>
       </div>
 
-      <div className={styles.button}>
+      <div className={styles.button} onMouseEnter={HoverButton} onMouseLeave={HoverButtonOut}>
         <img src="/button.png" alt="button" />
       </div>
 
@@ -58,7 +101,7 @@ export default function About() {
       <img className={styles.blocks} src="/icon3.png" alt="icon" />
 
       <div className={styles.ornamentation}>
-        {arr.map((item, index) => (
+        {arrForOrnamentation.map((item, index) => (
           <img key={index} src="/plus2.png" alt="icon" />
         ))}
       </div>

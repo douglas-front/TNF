@@ -11,6 +11,7 @@ import { arrowAnimation, arrowAnimationOut } from "@/app/layout/Hero/Animations/
 export default function Hero() {
 
   useEffect(()=>{
+        
     gsap.registerPlugin(ScrollTrigger)
     gsap.to(`.${styles.plus}`,{
       rotate: "280deg",
@@ -24,6 +25,10 @@ export default function Hero() {
       }
     })
 
+    return () => gsap.killTweensOf(`.${styles.plus}`) 
+  },[])
+
+  useEffect(()=>{
 
     ScrollTrigger.create({
       trigger: `.${styles.welcome}`,
@@ -47,10 +52,7 @@ export default function Hero() {
       }
     })
 
-    return()=>{
-      gsap.killTweensOf(`.${styles.plus}`)
-      ScrollTrigger.killAll()
-    }
+    return()=> ScrollTrigger.killAll()
   },[])
   
   useEffect(()=>{

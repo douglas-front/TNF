@@ -21,8 +21,19 @@
   gap: 1.41vw;
 }
 .paragraphs {
+  width: 65dvw;
+  position: relative;
   display: flex;
   gap: 2.71vw;
+  /* background-color: blue; */
+}
+.bg{
+  background-color: var(--color-red);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .miniTitle {
