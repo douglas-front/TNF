@@ -5,10 +5,11 @@ import styles from "./Hero.module.css";
 import titleAnimation from "@/app/layout/Hero/Animations/titleAnimation";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import {paragraphAnimation, paragraphAnimationOut} from "@/app/layout/Hero/Animations/paragraphAnimation";
-import { arrowAnimation, arrowAnimationOut } from "@/app/layout/Hero/Animations/arrowAnimation";
+import {paragraphAnimation} from "@/app/layout/Hero/Animations/paragraphAnimation";
+import { arrowAnimation } from "@/app/layout/Hero/Animations/arrowAnimation";
 
 export default function Hero() {
+
 
   useEffect(()=>{
         
@@ -62,7 +63,9 @@ export default function Hero() {
           mergulhe nessa experiência em <br />
           rumo ao mundo do desenvolvimento. <br />
         </p>
+        <a href="#languages">
         <img className={styles.arrow} src="/arrow.png" alt="arrow icon" />
+        </a>
       </div>
 
       <div className={styles.info}>
@@ -71,9 +74,9 @@ export default function Hero() {
           já disponível para a seguinte <br />
           plataforma digital.
         </p>
-        <button className={styles.button}>
-          <img src="/windows.png" alt="" />
-        </button>
+        <a href="#languages" className={styles.button}>
+          <img src="/windows.png" alt="windows icon" />
+        </a>
       </div>
 
       <img className={`${styles.ornamentation} ${styles.plus}`} src="/plus.png" alt="icon" />

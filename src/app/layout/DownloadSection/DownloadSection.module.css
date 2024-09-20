@@ -1,7 +1,7 @@
 .downloadSection{
     position: relative;
     background-color: var(--color-red);
-    height: 30vw;
+    height: 35vw;
 }
 
 .title{
@@ -10,7 +10,7 @@
 }
 .title img{
     position: absolute;
-    top: -1vw;
+    top: 11.5vw;
 
     width: 14.58vw;
 }

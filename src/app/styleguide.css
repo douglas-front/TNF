@@ -10,6 +10,10 @@
     height: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
 footer,
 section{
     padding-inline: var(--section-padding);

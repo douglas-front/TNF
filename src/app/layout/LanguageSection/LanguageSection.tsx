@@ -78,7 +78,7 @@ export default function LanguageSection() {
     ];
 
     return (
-        <section className={styles.languageSection}>
+        <section className={styles.languageSection} id='languages'>
             <h1 className={`${styles.title} small`}>
                 linguagens
                 <img src="/downloadIcon.png" alt="Download Icon" />

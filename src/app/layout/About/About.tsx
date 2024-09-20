@@ -44,7 +44,7 @@ export default function About() {
   },[])
 
   return (
-    <section className={styles.about}>
+    <section className={styles.about} id='sobre'>
       <h1 className={styles.title}>
         sobre
         <span className={styles.miniTitle}>

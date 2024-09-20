@@ -6,9 +6,9 @@ export default function Footer() {
       <div className={styles.sitemap}>
         <h3 className={styles.subTitle}>sitemap</h3>
         <ul className={styles.list}>
-          <li>Sobre</li>
-          <li>Contato</li>
-          <li>Download</li>
+          <a href="#sobre"><li>Sobre</li></a>
+          <a href="#contato"><li>Contato</li></a>
+          <a href="#languages"><li>Download</li></a>
         </ul>
       </div>
 
