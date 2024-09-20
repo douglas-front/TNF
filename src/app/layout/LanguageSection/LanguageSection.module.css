@@ -14,12 +14,18 @@
 }
 
 .card{
+    transform: translateY(100%);
     cursor: pointer;
     width: 20.83vw;
     height: 10.42vw;
 }
 .card img{
     width: 20.72vw;
+}
+.divCard{
+    overflow: hidden;
+    /* background-color: blue; */
+    pointer-events: none;
 }
 
 .containerCards{

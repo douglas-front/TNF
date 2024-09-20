@@ -3,8 +3,29 @@
 import Card from '@/app/layout/LanguageSection/Card';
 import styles from './LanguageSection.module.css';
 import { Bounce } from '@/app/animations/Bounce';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import { useEffect } from 'react';
+import gsap from 'gsap';
+import { cardAnimation } from './animations/cardAnimation';
 
 export default function LanguageSection() {
+
+
+    useEffect(()=>{
+        gsap.registerPlugin(ScrollTrigger)
+
+        ScrollTrigger.create({
+            trigger: `.${styles.languageSection}`,
+            // markers: true,
+            start: "20% 50%",
+            end: "100% 50%",
+            onEnter: ()=>{
+                cardAnimation()
+            },
+            // scrub: true
+        })
+    },[])
+
     const languages = [
         {
             img: "/languages/assembly.png",
@@ -64,7 +85,7 @@ export default function LanguageSection() {
             </h1>
             <div className={styles.containerCards}>
                 {languages.map((card, index) => (
-                    <div className={`card${index.toString()}`} key={index} onMouseEnter={()=> Bounce({className: `card${index}`})}>
+                    <div className={`card${index.toString()} ${styles.divCard}`} key={index} onMouseEnter={()=> Bounce({className: `card${index}`})}>
                         <Card src={card.img} download={card.download} />
                     </div>
                 ))}

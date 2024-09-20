@@ -38,18 +38,7 @@ export default function Hero() {
         paragraphAnimation()
         arrowAnimation()
       },
-      onEnterBack: ()=>{
-        paragraphAnimation()
-        arrowAnimation()
-      },
-      onLeave: ()=>{
-        paragraphAnimationOut()
-        arrowAnimationOut()
-      },
-      onLeaveBack: ()=>{
-        paragraphAnimationOut()
-        arrowAnimationOut()
-      }
+
     })
 
     return()=> ScrollTrigger.killAll()
